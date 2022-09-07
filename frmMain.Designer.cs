@@ -32,10 +32,11 @@
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.gbOficio = new System.Windows.Forms.GroupBox();
-            this.rbDesarrollo = new System.Windows.Forms.RadioButton();
-            this.rbAdmRed = new System.Windows.Forms.RadioButton();
-            this.rbDevOp = new System.Windows.Forms.RadioButton();
             this.rbAdminBD = new System.Windows.Forms.RadioButton();
+            this.rbDevOp = new System.Windows.Forms.RadioButton();
+            this.rbAdmRed = new System.Windows.Forms.RadioButton();
+            this.rbDesarrollo = new System.Windows.Forms.RadioButton();
+            this.button1 = new System.Windows.Forms.Button();
             this.gbOficio.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -85,16 +86,27 @@
             this.gbOficio.TabStop = false;
             this.gbOficio.Text = "Oficio";
             // 
-            // rbDesarrollo
+            // rbAdminBD
             // 
-            this.rbDesarrollo.AutoSize = true;
-            this.rbDesarrollo.Location = new System.Drawing.Point(35, 50);
-            this.rbDesarrollo.Name = "rbDesarrollo";
-            this.rbDesarrollo.Size = new System.Drawing.Size(195, 35);
-            this.rbDesarrollo.TabIndex = 0;
-            this.rbDesarrollo.TabStop = true;
-            this.rbDesarrollo.Text = "Desarrollador";
-            this.rbDesarrollo.UseVisualStyleBackColor = true;
+            this.rbAdminBD.AutoSize = true;
+            this.rbAdminBD.Location = new System.Drawing.Point(241, 113);
+            this.rbAdminBD.Name = "rbAdminBD";
+            this.rbAdminBD.Size = new System.Drawing.Size(191, 35);
+            this.rbAdminBD.TabIndex = 3;
+            this.rbAdminBD.TabStop = true;
+            this.rbAdminBD.Text = "Admin Bases";
+            this.rbAdminBD.UseVisualStyleBackColor = true;
+            // 
+            // rbDevOp
+            // 
+            this.rbDevOp.AutoSize = true;
+            this.rbDevOp.Location = new System.Drawing.Point(35, 113);
+            this.rbDevOp.Name = "rbDevOp";
+            this.rbDevOp.Size = new System.Drawing.Size(170, 35);
+            this.rbDevOp.TabIndex = 2;
+            this.rbDevOp.TabStop = true;
+            this.rbDevOp.Text = "Admin Infra";
+            this.rbDevOp.UseVisualStyleBackColor = true;
             // 
             // rbAdmRed
             // 
@@ -109,33 +121,33 @@
             this.rbAdmRed.CheckedChanged += new System.EventHandler(this.rbAdmRed_CheckedChanged);
             this.rbAdmRed.Click += new System.EventHandler(this.rbAdmRed_Click);
             // 
-            // rbDevOp
+            // rbDesarrollo
             // 
-            this.rbDevOp.AutoSize = true;
-            this.rbDevOp.Location = new System.Drawing.Point(35, 113);
-            this.rbDevOp.Name = "rbDevOp";
-            this.rbDevOp.Size = new System.Drawing.Size(170, 35);
-            this.rbDevOp.TabIndex = 2;
-            this.rbDevOp.TabStop = true;
-            this.rbDevOp.Text = "Admin Infra";
-            this.rbDevOp.UseVisualStyleBackColor = true;
+            this.rbDesarrollo.AutoSize = true;
+            this.rbDesarrollo.Location = new System.Drawing.Point(35, 50);
+            this.rbDesarrollo.Name = "rbDesarrollo";
+            this.rbDesarrollo.Size = new System.Drawing.Size(195, 35);
+            this.rbDesarrollo.TabIndex = 0;
+            this.rbDesarrollo.TabStop = true;
+            this.rbDesarrollo.Text = "Desarrollador";
+            this.rbDesarrollo.UseVisualStyleBackColor = true;
             // 
-            // rbAdminBD
+            // button1
             // 
-            this.rbAdminBD.AutoSize = true;
-            this.rbAdminBD.Location = new System.Drawing.Point(241, 113);
-            this.rbAdminBD.Name = "rbAdminBD";
-            this.rbAdminBD.Size = new System.Drawing.Size(191, 35);
-            this.rbAdminBD.TabIndex = 3;
-            this.rbAdminBD.TabStop = true;
-            this.rbAdminBD.Text = "Admin Bases";
-            this.rbAdminBD.UseVisualStyleBackColor = true;
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Location = new System.Drawing.Point(27, 307);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(189, 48);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "xxxx";
+            this.button1.UseVisualStyleBackColor = true;
             // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(485, 367);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.gbOficio);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.txtNombre);
@@ -163,6 +175,7 @@
         private System.Windows.Forms.RadioButton rbDevOp;
         private System.Windows.Forms.RadioButton rbAdmRed;
         private System.Windows.Forms.RadioButton rbDesarrollo;
+        private System.Windows.Forms.Button button1;
     }
 }
 
